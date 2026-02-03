@@ -164,31 +164,23 @@ streamlit run app.py
   - Exploratory Data Analysis (EDA) to identify trends and outliers.
   - Handling missing values using statistical imputation (Median/Mode).
   - Visualization of class imbalances (Approved vs. Rejected).
-
 - [x] **Phase 2: Advanced Feature Engineering**
   - Calculation of financial ratios (`Loan_to_Income_Ratio`).
   - Creation of repayment metrics (`Monthly_Installment`).
   - Log-transformation of skewed numerical features for model stability.
-
 - [x] **Phase 3: Model Development & Optimization**
   - Implementation of a **Stacked Ensemble Classifier** (Logistic Regression + Random Forest + XGBoost).
   - Class balancing using **SMOTE** to handle data disparity.
   - Hyperparameter tuning and custom **Probability Threshold (0.31)** optimization.
-
 - [x] **Phase 4: Explainable AI (XAI) Integration**
   - Global model interpretation using **SHAP** summary plots.
   - Individual "local" prediction justifications using **LIME**.
-
 - [x] **Phase 5: Deployment**
   - Developing a user-friendly UI with **Streamlit**.
   - Hosting the live application on **Streamlit Community Cloud**.
-
 - [ ] **Phase 6: Future Enhancements (Next Steps)**
   - Integration of a real-time database (PostgreSQL) to store application history.
   - Implementation of automated "Retraining Loops" as new data arrives.
-
-
-
 
 ---
 
@@ -215,14 +207,8 @@ Standard models use a default threshold of **0.50**. However, for this project, 
 ### **3. Feature Importance (SHAP)**
 According to our SHAP global analysis, the top 3 drivers for loan approval in this model are:
 1. **Credit History:** The single most dominant predictor.
-2. **Log_Total_Income:** Higher stability leads to higher approval probability.
-3. **Monthly_Installment:** Low monthly burdens strongly favor the applicant.
-
----
-
-
-
-
+2. **Log Total Income:** Higher stability leads to higher approval probability.
+3. **Monthly Installment:** Low monthly burdens strongly favor the applicant.
 
 
 
@@ -232,24 +218,17 @@ According to our SHAP global analysis, the top 3 drivers for loan approval in th
 
 | Feature | Description | Preprocessing / Engineering |
 | :--- | :--- | :--- |
-| **Gender** | Applicant's gender (Male/Female) | One-Hot Encoded |
-| **Married** | Marital status (Yes/No) | One-Hot Encoded |
-| **Dependents** | Number of people dependent on applicant | One-Hot Encoded (0, 1, 2, 3+) |
-| **Education** | Academic qualification (Graduate/Not) | One-Hot Encoded |
-| **Self_Employed** | Employment type status | One-Hot Encoded |
-| **Credit_History** | 1.0 (Good) or 0.0 (Bad) | Cleaned & Kept As-is |
-| **Property_Area** | Urban, Semiurban, or Rural | One-Hot Encoded |
-| **Log_Total_Income** | Combined Applicant + Coapplicant income | Log Transformation ($np.log1p$) |
-| **Log_LoanAmount** | Total loan amount requested | Log Transformation ($np.log1p$) |
-| **Monthly_Installment** | Estimated monthly repayment | Engineered: $LoanAmount / Term$ |
-| **Log_Loan_to_Income** | Ratio of loan to total income | Engineered & Log Transformed |
-| **Log_Loan_Term** | Duration of the loan in months | Log Transformation ($np.log1p$) |
+| **Gender** | Applicant's gender | One-Hot Encoded |
+| **Married** | Marital status | One-Hot Encoded |
+| **Dependents** | Number of dependents | One-Hot Encoded (0, 1, 2, 3+) |
+| **Log_Total_Income** | Combined income | Log Transformation ($np.log1p$) |
+| **Monthly_Installment** | Estimated repayment | Engineered: $LoanAmount / Term$ |
+| **Log_Loan_to_Income** | Ratio of loan to income | Engineered & Log Transformed |
 
 ---
 
 ## 🤝 Contributing
-
-Contributions make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions make the open-source community an amazing place to learn, inspire, and create. 
 
 1. **Fork** the Project
 2. Create your **Feature Branch** (`git checkout -b feature/AmazingFeature`)
@@ -260,7 +239,6 @@ Contributions make the open-source community an amazing place to learn, inspire,
 ---
 
 ## 🛡️ Badges
-
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Status](https://img.shields.io/badge/Status-Deployed-brightgreen)
@@ -268,14 +246,9 @@ Contributions make the open-source community an amazing place to learn, inspire,
 
 ---
 
-## 📄 License
-
-Distributed under the **MIT License**. See the `LICENSE` file for more information.
-
----
-
 ## 🙋‍♂️ Author
+**Abikale Michael Raymond** *AI | AI Automation | Data Analyst*
 
-**Abikale Michael Raymond** *AI | AI Automation | Full Stack Developer* - **LinkedIn:** [Michael Raymond Abikale](https://www.linkedin.com/in/michael-raymond-abikale-27363949/)
+- **LinkedIn:** [Michael Raymond Abikale](https://www.linkedin.com/in/michael-raymond-abikale-27363949/)
 - **GitHub:** [@techieemike](https://github.com/techieemike)
 - **Email:** [abikalemichaelraymond@gmail.com](mailto:abikalemichaelraymond@gmail.com)
