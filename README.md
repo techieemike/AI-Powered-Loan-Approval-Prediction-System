@@ -247,7 +247,7 @@ Contributions make the open-source community an amazing place to learn, inspire,
 ---
 
 ## 🙋‍♂️ Author
-**Abikale Michael Raymond** *AI | AI Automation | Data Analyst*
+**Abikale Michael Raymond** *AI | AI Automation | Full Stack Developer*
 
 - **LinkedIn:** [Michael Raymond Abikale](https://www.linkedin.com/in/michael-raymond-abikale-27363949/)
 - **GitHub:** [@techieemike](https://github.com/techieemike)
