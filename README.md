@@ -35,15 +35,12 @@ AI Loan Approval Prediction Systems/
 │   ├── visualization.py               # Charts & plots (EDA, feature importance)
 │   ├── AI_Loan_Approval_Prediction.ipynb  # Full workflow: model, feature engineering
 │   └── Data Results.html              # ydata-profiling report
-│   └── featureengineering.py           # Log transforms & Ratio calculations
-│   └── model.py                       # Stacked Ensemble & Threshold logic
-├── 📁 models/
-│   └── loan_model_stacked.pkl        # Final trained Stacked Classifier 
+│   └── featureengineering.py           # Log transforms & Ratio calculations                    
 ├── 📁 venv/
 ├── 📄 README.md                     # Documentation
 ├── 📄 requirements.txt              # Cloud deployment dependencies
 └── 📄 app.py                        # Streamlit Dashboard (Deployed)
-└── 📄 loan_model_stacked.pkl 
+└── 📄 loan_model_stacked.pkl        # Stacked Ensemble & Threshold logic
 
 
 
