@@ -22,8 +22,10 @@ In traditional banking, loan approval processes are often plagued by three main 
 
 ---
 
-## 🏗️ Project Structure
 
+
+## 🏗️ Project Structure
+```text
 AI Loan Approval Prediction Systems/
 ├── 📁 dataset/                       # Raw, balanced, and processed CSV files
 │   ├── train_data.csv
