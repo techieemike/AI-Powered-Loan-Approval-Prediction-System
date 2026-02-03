@@ -1,0 +1,22 @@
+31-01-2026 13:00:31.23 - INFO - Started validation of input parameters...
+31-01-2026 13:00:31.23 - INFO - Completed validation of input parameters
+31-01-2026 13:00:31.23 - INFO - Started handling of duplicates... Method: "AUTO"
+31-01-2026 13:00:31.23 - DEBUG - 0 missing values found
+31-01-2026 13:00:31.23 - INFO - Completed handling of duplicates in 0.004386 seconds
+31-01-2026 13:00:31.23 - INFO - Started handling of missing values...
+31-01-2026 13:00:31.23 - INFO - Found a total of 149 missing value(s)
+31-01-2026 13:00:31.23 - INFO - Started handling of NUMERICAL missing values... Method: "AUTO"
+31-01-2026 13:00:31.29 - DEBUG - LINREG imputation of 21 value(s) succeeded for feature "LoanAmount"
+31-01-2026 13:00:31.33 - DEBUG - LINREG imputation of 14 value(s) succeeded for feature "Loan_Amount_Term"
+31-01-2026 13:00:31.37 - DEBUG - LINREG imputation of 49 value(s) succeeded for feature "Credit_History"
+31-01-2026 13:00:31.39 - DEBUG - KNN imputation of 1 value(s) succeeded for feature "LoanAmount"
+31-01-2026 13:00:31.39 - DEBUG - KNN imputation of 1 value(s) succeeded for feature "Credit_History"
+31-01-2026 13:00:31.39 - INFO - Started handling of CATEGORICAL missing values... Method: "AUTO"
+31-01-2026 13:00:31.46 - DEBUG - KNN imputation of 13 value(s) succeeded for feature "Gender"
+31-01-2026 13:00:31.47 - DEBUG - KNN imputation of 3 value(s) succeeded for feature "Married"
+31-01-2026 13:00:31.48 - DEBUG - KNN imputation of 15 value(s) succeeded for feature "Dependents"
+31-01-2026 13:00:31.49 - DEBUG - KNN imputation of 32 value(s) succeeded for feature "Self_Employed"
+31-01-2026 13:00:31.49 - INFO - Completed handling of missing values in 0.255295 seconds
+31-01-2026 13:00:31.49 - INFO - Started handling of outliers... Method: "WINZ"
+31-01-2026 13:00:31.56 - DEBUG - Outlier imputation of 50 value(s) succeeded for feature "ApplicantIncome"
+31-01-2026 13:00:31.58 - DEBUG - Outlier imputation of 18 value(s) succeeded for feature "CoapplicantIncome"
